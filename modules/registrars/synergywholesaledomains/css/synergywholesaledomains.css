@@ -1,0 +1,55 @@
+.ellipis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
+
+.modal {
+    display:    none;
+    margin:     auto;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     25%;
+    width:      25%;
+    background: rgba( 255, 255, 255, 0 ) 
+                url('../img/gears.gif')
+                50% 50% 
+                no-repeat;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .modal {
+    display: block;
+}
+.inline {
+    display:inline-block;
+}
+.insertRow {
+    margin: 20px 0 10px 0;
+}
+.plf {
+    padding-left:4px;
+}
+.row select[name=type] {
+    width:100%;
+}
+.row input[type=text], .row select {
+    height:46px;
+}
+.row-table .row:not(#divHeading) {
+    padding:5px 0 5px 0;
+}
+.row-table .row:not(#divHeading):nth-child(even) {
+    background-color:#F0F0F5;
+}
+.row-table .row:not(#divHeading):nth-child(odd) {
+    background-color:#F2F7FC;
+}
